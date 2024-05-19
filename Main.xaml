@@ -142,20 +142,20 @@
                       <InArgument x:TypeArguments="x:String">[Convert.ToDateTime(currentItem.Headers("Date")).ToString("ddd; dd-MM-yyyy HH:mm:ss")]</InArgument>
                     </ui:AssignOperation.Value>
                   </ui:AssignOperation>
-                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
-                    <ui:AssignOperation.To>
-                      <OutArgument x:TypeArguments="x:String">[Content]</OutArgument>
-                    </ui:AssignOperation.To>
-                    <ui:AssignOperation.Value>
-                      <InArgument x:TypeArguments="x:String">[currentItem.Body.Replace(",","&lt;comma&gt;").Replace(Environment.NewLine,"&lt;newline&gt;")]</InArgument>
-                    </ui:AssignOperation.Value>
-                  </ui:AssignOperation>
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
                     <ui:AssignOperation.To>
                       <OutArgument x:TypeArguments="x:String">[AuditLog]</OutArgument>
                     </ui:AssignOperation.To>
                     <ui:AssignOperation.Value>
                       <InArgument x:TypeArguments="x:String">[AuditLog + ReceivedDate+"," + Content+Environment.NewLine]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[Content]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[currentItem.Body.Replace(",","&lt;comma&gt;").Replace(Environment.NewLine,"&lt;newline&gt;")]</InArgument>
                     </ui:AssignOperation.Value>
                   </ui:AssignOperation>
                 </scg:List>
