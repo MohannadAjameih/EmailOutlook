@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1114.4,820.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>828.8,820.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -150,7 +150,7 @@
                       <InArgument x:TypeArguments="x:String">[AuditLog + ReceivedDate+"," + Content+Environment.NewLine]</InArgument>
                     </ui:AssignOperation.Value>
                   </ui:AssignOperation>
-                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
                     <ui:AssignOperation.To>
                       <OutArgument x:TypeArguments="x:String">[Content]</OutArgument>
                     </ui:AssignOperation.To>
